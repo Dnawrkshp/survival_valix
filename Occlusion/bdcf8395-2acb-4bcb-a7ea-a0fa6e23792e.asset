@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a77ce0358ad614586b1f3f5717be2e, type: 3}
+  m_Name: bdcf8395-2acb-4bcb-a7ea-a0fa6e23792e
+  m_EditorClassIdentifier: 
+  Octants:
+  - {x: 592, y: 332, z: 196}
+  - {x: 588, y: 336, z: 176}
+  - {x: 584, y: 336, z: 180}
+  - {x: 588, y: 336, z: 180}
+  - {x: 584, y: 336, z: 184}
+  - {x: 588, y: 336, z: 184}
+  - {x: 584, y: 336, z: 188}
+  - {x: 588, y: 336, z: 188}
+  - {x: 592, y: 336, z: 188}
+  - {x: 592, y: 336, z: 192}
+  - {x: 592, y: 336, z: 196}
+  - {x: 588, y: 340, z: 176}
+  - {x: 584, y: 340, z: 180}
+  - {x: 588, y: 340, z: 180}
+  - {x: 584, y: 340, z: 184}
+  - {x: 588, y: 340, z: 184}
+  - {x: 584, y: 340, z: 188}
+  - {x: 588, y: 340, z: 188}
+  - {x: 592, y: 340, z: 192}
+  - {x: 592, y: 340, z: 196}
+  - {x: 588, y: 336, z: 160}
+  - {x: 588, y: 340, z: 160}
+  - {x: 592, y: 340, z: 176}
+  - {x: 592, y: 340, z: 180}
+  - {x: 592, y: 340, z: 184}
+  - {x: 592, y: 340, z: 188}
+  - {x: 592, y: 336, z: 152}
+  - {x: 592, y: 336, z: 156}
+  - {x: 592, y: 336, z: 160}
+  - {x: 592, y: 336, z: 164}
+  - {x: 592, y: 336, z: 180}
+  - {x: 592, y: 336, z: 184}
+  - {x: 592, y: 340, z: 152}
+  - {x: 592, y: 340, z: 156}
+  - {x: 592, y: 340, z: 160}
+  - {x: 592, y: 340, z: 164}
