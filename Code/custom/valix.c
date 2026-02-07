@@ -4,9 +4,12 @@
 #include <libdl/net.h>
 #include <libdl/area.h>
 #include <libdl/spawnpoint.h>
+#include <libdl/random.h>
 #include <libdl/stdio.h>
 #include <libdl/string.h>
+#include <libdl/hud.h>
 #include "utils.h"
+#include "maputils.h"
 #include "shared.h"
 #include "soulcollector.h"
 
@@ -20,6 +23,9 @@
 #define BOSS_ARENA_HACK_ORB_MOB_BONUS (50)
 #define BOSS_ARENA_MAX_MINIONS (5)
 #define BOSS_ARENA_MINIONS_AFTER (0.5)
+
+// all but boss area jump pad
+#define RANDOMIZE_JUMP_PADS_COUNT (10)
 
 int mapSpawnMob(int spawnParamsIdx, VECTOR position, float yaw, int spawnFromUID, int spawnFlags);
 void mapReturnPlayersToMap(void);
@@ -67,11 +73,11 @@ void gambitsJumpPadsRandomizeOnRoundComplete(int roundNumber)
 {
 	int count = 0;
 	Moby *m = mobyListGetStart();
-	int cuboids[11];
-	Moby *jumpPads[11] = {};
+	int cuboids[RANDOMIZE_JUMP_PADS_COUNT];
+	Moby *jumpPads[RANDOMIZE_JUMP_PADS_COUNT] = {};
 
 	// collect all jump pads
-	while (count < 11 && (m = mobyFindNextByOClass(m, MOBY_ID_JUMP_PAD)))
+	while (count < RANDOMIZE_JUMP_PADS_COUNT && (m = mobyFindNextByOClass(m, MOBY_ID_JUMP_PAD)))
 	{
 		jumpPads[count] = m;
 		cuboids[count] = *(int *)(m->PVar + 24);
