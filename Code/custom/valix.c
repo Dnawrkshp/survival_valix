@@ -27,6 +27,11 @@
 // all but boss area jump pad
 #define RANDOMIZE_JUMP_PADS_COUNT (10)
 
+enum ValixNetMessageIds
+{
+	CUSTOM_MSG_TELEPORT_BIG_AL = 190
+};
+
 int mapSpawnMob(int spawnParamsIdx, VECTOR position, float yaw, int spawnFromUID, int spawnFlags);
 void mapReturnPlayersToMap(void);
 void mobForceIntoMapBounds(Moby *moby);
@@ -124,10 +129,12 @@ void gambitsHoverbootsInit(void)
 	int i;
 
 	// set hoverboots perks
+#ifdef ITEM_PASSIVE_HOVERBOOTS
 	for (i = 0; i < GAME_MAX_PLAYERS; ++i)
 	{
-		MapConfig.State->PlayerStates[i].State.ItemStackable[STACKABLE_ITEM_HOVERBOOTS] = 10;
+		MapConfig.State->PlayerStates[i].State.ItemCounts[ITEM_PASSIVE_HOVERBOOTS] = 10;
 	}
+#endif
 }
 
 //--------------------------------------------------------------------------
