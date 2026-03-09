@@ -7,6 +7,7 @@
 #include <libdl/random.h>
 #include <libdl/stdio.h>
 #include <libdl/string.h>
+#include <libdl/ui.h>
 #include <libdl/hud.h>
 #include "utils.h"
 #include "maputils.h"
