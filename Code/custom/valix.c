@@ -11,7 +11,7 @@
 #include <libdl/hud.h>
 #include "utils.h"
 #include "maputils.h"
-#include "shared.h"
+#include "mobs/mob.h"
 #include "soulcollector.h"
 
 #define OOB_AREA_INDEX_START (0)
