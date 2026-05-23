@@ -472,6 +472,10 @@ float valixGetSpawnDistanceMultiplier(void)
 //--------------------------------------------------------------------------
 int valixCanSpawnMobs(void)
 {
+#if DEBUG_MANUAL_SPAWNING
+	return 0;
+#endif
+
 	if (!IsInBossFight)
 		return 1;
 
